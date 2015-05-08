@@ -3,7 +3,7 @@ this is my dang css
 */
 
 body {
-	background: #ffcc00;
+	background: #ffC00D;
 	margin-top: -10px;
 	 padding-top: -10px;
   	padding-left:  27px;
@@ -12,10 +12,32 @@ body {
 }
 
 h1 {
-	font-size: 28px;
+	font-family: "News Cycle", sans-serif;
+	font-size: 200px;
 	font-weight: normal;
 	letter-spacing: 1px;
 	margin: 27px;
 	color: #111111;
 
+}
+
+#photos {
+	position: absolute;
+	top: 20%;
+	width: auto;
+	height: 1000px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+
+#photos img {
+	width: 700px;
+	margin-left: 10px;
+	/*border: 3px solid red;*/
+}
+
+#scroll {
+	position: absolute;
+	top: 95%;
 }
