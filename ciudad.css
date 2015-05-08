@@ -1,0 +1,21 @@
+/* 
+this is my dang css
+*/
+
+.site {
+	background: ffcc00;
+	margin-top: -10px;
+	 padding-top: -10px;
+  	padding-left:  27px;
+  	padding-right: 27px;
+  	padding-bottom:27px;
+}
+
+h1 {
+	font-size: 28px;
+	font-weight: normal;
+	letter-spacing: 1px;
+	margin: 27px;
+	color: #111111;
+
+}
