@@ -17,8 +17,6 @@ body{
 	padding-top: 10vh;
 }
 
-
-
 #header h1{
 	font-family: "News Cycle", sans-serif;
 	font-size: 65px;
@@ -49,4 +47,8 @@ body{
 
 #text {
 	background-color: white;
+}
+
+.map {
+	
 }

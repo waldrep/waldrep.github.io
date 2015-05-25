@@ -1,6 +1,22 @@
 body{
 	background: #1A1A1A;
 	margin: 0px;
+	font-family: 'Merriweather', serif;
+}
+
+#title_bug{
+	position: fixed;
+	margin: 0px;
+	z-index: 100;
+}
+
+#title_bug h1{
+	margin: 0px;
+	padding: 0.5em;
+	color: white;
+	font-weight: 300;
+	font-size: 18px;
+	background-color: rgba(54, 25, 25, .2);
 }
 
 #menu_bar{
@@ -22,9 +38,16 @@ body{
 }
 
 #spread_01{
-	background-image: url("static/story02/1X5A4901.jpg");
+	background-image: url("static/story03/1X5A1123.jpg");
 	margin: 0px;
 }
+
+/*#spread_01_bg{
+	background-color: white;
+	height: 96px;
+	width: 800px;
+	margin: auto;
+}*/
 
 #map{
 	background-image: url("static/story02/14_map.jpg");
@@ -35,7 +58,8 @@ body{
 
 .header01 {
 	text-align: center;
-	padding-top: 8vh;
+	padding-top: 30vh;
+	margin: 0px;
 }
 
 .header01 h1{
@@ -64,7 +88,6 @@ body{
 .body_heading h1{
 	font-size: 60px;
 	color: white;
-	font-family: Arial;
 	position: relative;
 	text-align: left;
 	margin: 0px;
