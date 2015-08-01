@@ -330,12 +330,12 @@ p {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 568px) {
     #banner_bg {
     background-color: rgba(0,0,0,.3);
     }
     .banner-head {
-    margin-top: 13vh;
+    margin-top: 10vh;
     padding-left: 1em;
     padding-right: 1em;
     }
