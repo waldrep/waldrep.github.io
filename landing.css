@@ -55,10 +55,11 @@ body{
 }*/
 
 #map{
-	background-image: url("../static/story02/14_map.jpg");
+	background-image: url("static/story02/14_map.jpg");
 	max-width: 1000px;
 	max-height:100vh;
 	margin: 0 auto;
+	margin-top: 2em;
 }
 
 .header01 {
@@ -251,4 +252,13 @@ a:active{
 
 
 
-/*HERES SOME BULLSHIT*/
+/*HERES SOME testing*/
+
+.pure-g {
+	text-align: center;
+}
+
+.grid {
+	margin: 0 auto;
+	display: block;
+}

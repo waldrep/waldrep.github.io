@@ -16,7 +16,7 @@ body{
 }
 
 #spread_01{
-	background-image: url("static/menu/1X5A1602.jpg");
+	background-image: url("static/story01/1X5A0275.jpg");
 	margin: 0px;
 }
 
@@ -26,18 +26,18 @@ body{
 }
 
 #menu{
-	max-width: 800px;
-	/*background-color: white;*/
+	max-width: 1000px;
+	background-color: white;
 	margin: auto;
 	padding: 3em;
 }
 
 .menu_item{
 	position: relative;
-	display: block;
+	display: inline-block;
 	padding: 0.5em;
 	height: 300px;
-	width: 800px;
+	width: 300px;
 	background-color: red;
 	margin-bottom: 2em;
 
