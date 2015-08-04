@@ -13,6 +13,10 @@ p {
     line-height: 1.6em;
 }
 
+#single_img{
+    margin: auto;
+}
+
 #testing_es{
     display: none;
 }
@@ -241,6 +245,8 @@ a:active{
         margin-top: 0;
         padding-bottom: .5em;
         font-weight: 300;
+        max-width: 800px;
+        
     }
 
 .pricing-table-header a{
