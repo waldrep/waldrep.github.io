@@ -3,7 +3,7 @@
  * Most of these are inherited from Base, but I want to change a few.
  */
 body {
-    color: #526066;
+    background-color: #fefdfb;
 }
 
 h2, h3 {
@@ -13,6 +13,36 @@ p {
     line-height: 1.6em;
 }
 
+#testing_es{
+    display: none;
+}
+
+#testing{
+}
+/* -- Link Styles -- */
+a:link{
+    color: #FF5200;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:visited{
+    /*color: #FF5200;*/
+    color:#FF5200;
+}
+
+a:hover{
+    outline: 0 none;
+    text-decoration: underline;
+}
+
+a:focus{
+    outline: thin dotted #333;
+    outline-offset: -2px;
+}
+a:active{
+    color: #FF5200;
+}
 
 /*
  * -- Layout Styles --
@@ -24,9 +54,36 @@ p {
 .l-box {
     padding: 0.5em 2em;
 }
+
+#essay{
+    position: relative;
+    margin: 0 auto;
+    max-width: 800px;
+    margin-top: 2em;
+}
+
+#essay p{
+    color: black;
+    font-family: "Merriweather", serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 2.5rem;
+    margin-bottom: 1.5em;
+    margin-top:0;
+}
+
+.l-box h1{
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    margin: 0px;
+    font-family: 'Lusitana', sans-serif;
+}
+
 .l-box-2{
     padding: 0.1em;
 }
+
 /*
  * -- MENU STYLES --
  * Make the menu have a very faint box-shadow.
@@ -114,9 +171,8 @@ p {
 */
 .caption{
     position: absolute;
-    bottom: 1em;
+    bottom: 0em;
     right: 1em;
-    line-height: 0.3em;
 }
 
 .caption p{
@@ -125,6 +181,7 @@ p {
     font-weight: 100;
     font-family: 'News Cycle', sans-serif;
     text-align: right;
+    line-height: 0.4em;
 }
 /*
  * -- PRICING TABLE WRAPPER --
@@ -167,8 +224,7 @@ p {
  * By default, a header is black/white, and has some styles for its <h2> name.
  */
 .pricing-table-header {
-    background: black;
-    color: #fff;
+    color: black;
 }
     .pricing-table-header h2 {
         margin: 0;
@@ -176,12 +232,31 @@ p {
         padding-bottom: .5em;
         font-size: 2em;
         font-weight: normal;
+        font-family: "Lusitana", serif;
 
     }
     .pricing-table-header p{
+        font-family: "Merriweather", sans-serif;
         margin: 1em;
+        margin-top: 0;
         padding-bottom: .5em;
+        font-weight: 300;
     }
+
+.pricing-table-header a{
+    color: black;
+    text-decoration: none;
+}
+
+.pricing-table-header a:hover{
+    text-decoration: underline;
+}
+
+.pricing-table-header a:visited{
+    color: black;
+    text-decoration: none;
+}
+
 
 
 /*
@@ -273,7 +348,7 @@ p {
 
 @media(max-width: 1300px){
     .caption p{
-        color: transparent;
+        display: none;
     }
 }
 
@@ -338,5 +413,8 @@ p {
     margin-top: 10vh;
     padding-left: 1em;
     padding-right: 1em;
+    }
+    #essay h1{
+        font-size: 30px;
     }
 }
