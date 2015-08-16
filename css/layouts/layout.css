@@ -107,6 +107,7 @@ a:active{
     line-height: 2.5rem;
     margin-bottom: 1.5em;
     margin-top:0;
+    padding-top: 1em;
 }
 
 .l-box h1{
@@ -307,6 +308,7 @@ a:active{
 
 .story_text{
     text-align: left;
+    text-indent: 2em;
 
 }
 
@@ -386,6 +388,22 @@ a:active{
     }
 
 
+
+/*
+ * -- About Page --
+ * 
+ */
+
+#about{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+#centered{
+    margin: auto;
+    width: 50%;
+    display: block;
+}
 
 /*
  * -- TABLET MEDIA QUERIES --
