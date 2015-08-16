@@ -28,7 +28,9 @@
     color: black;
 }
 
-
+#title_links a{
+    font-weight: 300;
+}
 /*
  * -- BASE STYLES --
  * Most of these are inherited from Base, but I want to change a few.
@@ -100,7 +102,7 @@ a:active{
 #essay p{
     color: black;
     font-family: "Merriweather", serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 2.5rem;
     margin-bottom: 1.5em;
@@ -263,8 +265,8 @@ a:active{
 }
     .pricing-table-header h2 {
         margin: 0;
-        padding-top: .5em;
-        padding-bottom: .5em;
+        padding-top: .2em;
+        padding-bottom: .2em;
         font-size: 2em;
         font-weight: normal;
         font-family: "Lusitana", serif;
@@ -273,11 +275,15 @@ a:active{
     .pricing-table-header p{
         font-family: "Merriweather", sans-serif;
         margin-top: 0;
-        margin: 1em;
         margin: auto;
-        padding-bottom: .5em;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-bottom: 1em;
         font-weight: 300;
         max-width: 800px;
+        text-indent: 2em;
+        text-align: left;
+        font-size: 13px;
         
     }
 
@@ -295,6 +301,14 @@ a:active{
     text-decoration: none;
 }
 
+/*
+* -- Text styling for Story Introductory text
+*/
+
+.story_text{
+    text-align: left;
+
+}
 
 
 /*
@@ -365,6 +379,7 @@ a:active{
     background: #111;
     color: #888;
     text-align: center;
+    font-size: 10px;
 }
     .footer a {
         color: #ddd;
@@ -381,6 +396,9 @@ a:active{
 @media(max-height: 1000px){
     .banner-head h3{
     font-size: 20px;
+    }
+    .caption {
+        display: none;
     }
 }
 
