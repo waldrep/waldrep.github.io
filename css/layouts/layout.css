@@ -323,11 +323,11 @@ a:active{
         font-family: "Merriweather", sans-serif;
         margin-top: 0;
         margin: auto;
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 2em;
+        padding-right: 2em;
         padding-bottom: 1em;
         font-weight: 300;
-        max-width: 800px;
+        max-width: 650px;
         text-indent: 2em;
         text-align: left;
         font-size: 13px;
@@ -355,6 +355,8 @@ a:active{
 .story_text{
     text-align: left;
     text-indent: 2em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
 
 }
 
