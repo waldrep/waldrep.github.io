@@ -95,8 +95,8 @@ a:active{
 #essay{
     position: relative;
     margin: 0 auto;
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 3em;
+    padding-right: 3em;
     max-width: 800px;
     margin-top: 2em;
 }
@@ -110,8 +110,8 @@ a:active{
     margin-bottom: 1em;
     margin-top:0;
     padding-top: 1em;
-    padding-left: 5em;
-    padding-right: 5em;
+    margin-left: 5em;
+    margin-right: 5em;
 }
 
 .l-box h1{
@@ -257,11 +257,12 @@ a:active{
     position: absolute;
     bottom: 0em;
     right: 1em;
+    z-index: 100;
 }
 
 .caption p{
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 100;
     font-family: 'News Cycle', sans-serif;
     text-align: right;
@@ -292,7 +293,7 @@ a:active{
 }
 
 #about_box{
-    margin-top: 2em;
+    margin-top: .5em;
 }
 
 /*
@@ -332,7 +333,7 @@ a:active{
         padding-bottom: 1em;
         font-weight: 300;
         max-width: 650px;
-        text-indent: 2em;
+        /*text-indent: 2em;*/
         text-align: left;
         font-size: 13px;
         
@@ -358,9 +359,9 @@ a:active{
 
 .story_text{
     text-align: left;
-    text-indent: 2em;
+    /*text-indent: 2em;
     padding-left: 2.5em;
-    padding-right: 2.5em;
+    padding-right: 2.5em;*/
 
 }
 
@@ -463,10 +464,8 @@ a:active{
     .banner-head h3{
     font-size: 20px;
     }
-    .caption {
-        display: none;
-    }
 }
+
 
 @media(max-width: 1300px){
     .caption p{
@@ -524,6 +523,11 @@ a:active{
     .banner-head h3{
     display: block;
     font-size: 20px;
+    }
+    #essay p{
+        font-size: 12px;
+        margin-left: 0.25em;
+        margin-right: 0.25em;
     }
 }
 
