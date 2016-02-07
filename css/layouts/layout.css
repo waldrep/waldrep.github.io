@@ -95,7 +95,7 @@ a:active{
     padding-left: 3em;
     padding-right: 3em;
     max-width: 800px;
-    margin-top: 2em;
+    margin-top: 0em;
 }
 
 #essay p{
@@ -117,6 +117,7 @@ a:active{
     text-align: center;
     margin: 0px;
     font-family: 'Lusitana', sans-serif;
+    margin-top: 25px;
 }
 
 .l-box-2{
@@ -361,6 +362,7 @@ a:active{
     padding-right: 2.5em;*/
 
 }
+
 
 
 /*
