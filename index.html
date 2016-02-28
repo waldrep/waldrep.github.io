@@ -2,57 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A layout example that shows off a responsive pricing table.">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a responsive pricing table.">
     <title>La Ciudad Actual</title>
-
-    
-
-<link href='http://fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,900' rel='stylesheet' type='text/css'>
-
-
-
-
-<!--[if lte IE 8]>
-  
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
-  
-<![endif]-->
-<!--[if gt IE 8]><!-->
-  
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
-  
-<!--<![endif]-->
-  
+    <link href='http://fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,900' rel='stylesheet' type='text/css'>
     <!--[if lte IE 8]>
-        <link rel="stylesheet" href="css/layouts/pricing-old-ie.css">
+      
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+      
     <![endif]-->
     <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" href="css/layouts/layout.css">
+      
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+      
     <!--<![endif]-->
-  
+      
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="css/layouts/pricing-old-ie.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="css/layouts/layout.css">
+        <!--<![endif]-->
+      
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>   
- <script src="scripts/en_es.js"></script>
- <script src="node_modules/readmore-js/readmore.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>   
+     <script src="scripts/en_es.js"></script>
+     <script src="node_modules/readmore-js/readmore.min.js"></script>
 
-<!-- GOOGLE ANALYTICS -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <!-- GOOGLE ANALYTICS -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-63542344-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-    
-
+      ga('create', 'UA-63542344-1', 'auto');
+      ga('send', 'pageview');
+    </script>
 </head>
 <body>
 <div class="menu_bar">
@@ -82,8 +70,9 @@
         <div class="pure-u-1">
             <div class = "l-box" id = "essay">
             <span id="testing_es"><h1>¿Cómo parece la megalópolis de la Sigla XXI?</h1></span>
+            <article id="intro_article">
             <span id="testing"><h1>The Contemporary City</h1></span>
-        <article id="intro_article">
+        
        <p>
        Mexico City is a space, constructed from buildings, lives, policies, and understandings. Its an agglomeration of ideals and visions, of interventions and negotiations. It extends across and beyond its various (and always inadequate) mapped representations: a dot on a globe, a governmental boundary, a polygon of ‘urban extent.’ In this extension, it is a prototypical 21st century city. Assembled within geomorphological constraints and legal frameworks, it represents the sum of 700 years of city planning.
        </p>
@@ -100,25 +89,29 @@
         </p>
         <script>
         $('article').readmore({
-            collapsedHeight:400,
-            speed: 200,
-            moreLink: '<a href="#">expand</a>'
-
-        });
+            collapsedHeight:300,
+            speed: 500,
+            moreLink: '<a href="#">more</a>',
+            lessLink: '<a href="#">less</a>',
+            afterToggle: function(trigger, element, expanded) {
+            if(! expanded) { // The "Close" link was clicked
+            $('html, body').animate({scrollTop: $(element).offset().top}, {duration: 100});
+            }   
+        }
+    });
         </script>
         </article>
 
             </div>
         </div>
 </div>
-
 <div class="l-content">
     <div class="pricing-tables pure-g">
     <A NAME="stories">
 
         <div class="pure-u-1 pure-u-md-1-1">
                 <div class="l-box-2">
-                <a href="ecatepec"><img class="pure-img" src="static/story03/1X5A1123_01.jpg">
+                <a href="ecatepec"><img class="pure-img" src="static/1X5A4882.jpg">
                     <div class="pricing-table-header"></a>
                         <h2><a href="ecatepec">Ecatepec: Change Over Time in the Estado de México</a></h2>
                         <div class="story_text"><p>One of the country's most populous municipalities, just on the border with Mexico City's Federal District, has exploded from near nothingness into one of the most simultaneously notorious and misunderstood areas in Mexico. On the occasion of the 100th anniversary of a cross-raising on its namesake hill, Ecatepec looks back on a long and multifaceted history</p>
@@ -131,13 +124,13 @@
 
         <div class="pure-u-1 pure-u-md-1-2">
             <div class="l-box-2">
-                <a href="synchronicity"><img class="pure-img" id="single_img" src="static/neza_coyote.jpg"></a>
+                <a href="synchronicity"><img class="pure-img" id="single_img" src="static/1X5A2082.jpg"></a>
                 </div>
         </div>  
 
         <div class="pure-u-1 pure-u-md-1-2" >
             <div class="l-box-2">
-                <a href="synchronicity"><img class="pure-img" src="static/Torres_de_Satelite.jpg"></a>
+                <a href="synchronicity"><img class="pure-img" src="static/1X5A0124.jpg"></a>
                 </div>
         </div>
 
@@ -153,14 +146,14 @@
 
         <div class="pure-u-1 pure-u-md-1-1">
             <div class="l-box-2">
-                 <a href="something">
+                 <a href="tlatelolco">
                  <img class="pure-img" src="static/1X5A1661.jpg">
                  </a>
                 <div class="pricing-table-header">
                     
-                    <h2><a href="something">Tlatelolco and Modernist Government Housing </a></h2>
+                    <h2><a href="tlatelolco">Tlatelolco and Modernist Government Housing </a></h2>
                    
-                    <p>For a time, Mexico's government aggressively pursued publicly funded and constructed developments. Many of these were proudly modernist, master-planned urban renewal projects. Tlatelolco, the most famous of this mid-century moment, vividly provides an image of a alternate future of housing in the capital.</p>
+                    <p>For a time, Mexico's government aggressively pursued publicly funded and constructed developments. Many of these were proudly modernist, master-planned urban renewal projects. Tlatelolco, the most famous of this mid-century moment, vividly provides an image of an alternate future of housing in the capital.</p>
 
                 </div>
         </div>
@@ -183,9 +176,9 @@
 
         <div class="pure-u-1 pure-u-md-1-2">
             <div class="l-box-2">
-                 <a href="something"><img class="pure-img" src="static/f158473626.jpg"></a>
+                 <a href="cuautitlan"><img class="pure-img" src="static/f158473626.jpg"></a>
                 <div class="pricing-table-header">
-                   <h2> <a href="something">Living in Cuautitlan</a></h2>
+                   <h2> <a href="cuautitlan">Living in Cuautitlan</a></h2>
                     <p>A first hand perspective of living in an INFONAVIT-funded development in the northern reaches of Mexico City's sprawl.</p>
 
                 </div>
