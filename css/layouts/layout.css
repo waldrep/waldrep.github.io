@@ -149,7 +149,7 @@ a:active{
     background-position: center center;
     background-size: cover;
     padding: 0px;
-    background-image: url("http://laciudadactual.com/static/landing/f123865754.jpg");
+    background-image: url("../../static/f123865754.jpg");
     margin: 0px;
     z-index: 1;
 }
@@ -436,6 +436,7 @@ a:active{
     }
     .footer p {
         padding-right: 1em;
+        margin: 0px;
     }
 
 

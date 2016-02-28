@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="A layout example that shows off a responsive pricing table.">
 
-    <title>Landing Page &ndash; La Ciudad Actual</title>
+    <title>La Ciudad Actual</title>
 
     
 
@@ -36,7 +36,8 @@
   
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>   
- <script src="scripts/en_es.js"></script> 
+ <script src="scripts/en_es.js"></script>
+ <script src="node_modules/readmore-js/readmore.min.js"></script>
 
 <!-- GOOGLE ANALYTICS -->
 <script>
@@ -82,11 +83,10 @@
             <div class = "l-box" id = "essay">
             <span id="testing_es"><h1>¿Cómo parece la megalópolis de la Sigla XXI?</h1></span>
             <span id="testing"><h1>The Contemporary City</h1></span>
-
+        <article id="intro_article">
        <p>
        Mexico City is a space, constructed from buildings, lives, policies, and understandings. Its an agglomeration of ideals and visions, of interventions and negotiations. It extends across and beyond its various (and always inadequate) mapped representations: a dot on a globe, a governmental boundary, a polygon of ‘urban extent.’ In this extension, it is a prototypical 21st century city. Assembled within geomorphological constraints and legal frameworks, it represents the sum of 700 years of city planning.
        </p>
-            
         <p>
         That all said, some 40% of its built area has sprung up since 1950, a timespan in which the city has grown from a capital city of 1.5 million people to a sprawling urban region of some 21 million. What was once a city in the center of a valley now laps up against the ridges of the bowl in every direction. A midcentury economic miracle and nearly incomprehensible numbers of migrants from la provincia have exploded as sense of the city’ demarkations. It is this social and physical phenomenon, this ongoing process of expansion that makes the city ripe for study. 
         </p>
@@ -98,6 +98,16 @@
         <p>
         Mexico’s path to this contemporary start is unique and storied. But in many ways, too, it is typical of a global phenomenon. The oft-discussed tip from a majority-rural to urban population on earth is sometimes linked to discussions of millennials bidding up rents in San Francisco or New York. In actuality, though, its in places like Coacalco and Ixtapaluca that this transition is truly taking place, where these numbers are really adding up. And the neighborhoods, both formal and informal, that are lumping themselves onto the mass of Mexico City are in many ways the same as those in Cape Town, Istanbul, and Rio de Janeiro. 
         </p>
+        <script>
+        $('article').readmore({
+            collapsedHeight:400,
+            speed: 200,
+            moreLink: '<a href="#">expand</a>'
+
+        });
+        </script>
+        </article>
+
             </div>
         </div>
 </div>
