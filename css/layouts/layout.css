@@ -205,7 +205,7 @@ a:active{
     background-position: center center;
     background-size: cover;
     padding: 0px;
-    background-image: url("../../static/1X5A2058.jpg");
+    background-image: url("../../static/1X5A2133.jpg");
     margin: 0px;
     z-index: 5;
 }
@@ -273,6 +273,7 @@ a:active{
 .banner-head h3{
     font-size: 30px;
     font-weight: 400;
+    margin-top:0px;
     
 }
 
