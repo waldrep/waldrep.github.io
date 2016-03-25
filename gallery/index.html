@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<![endif]-->
+<meta charset="utf-8">
+<title>blueimp Gallery</title>
+<link rel="stylesheet" href="css/blueimp-gallery.min.css">
+<link rel="stylesheet" href="css/demo.css">
+</head>
+<body>
+<h3>Hi what's going on</h3>
+<div id="blueimp-gallery" class="blueimp-gallery blueimg-gallery">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>  
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+<div id="links">
+    <div class='mcw'>
+    <a href="../static/1X5A9931.jpg" title="Banana">
+        <img src="../static/1X5A9931.jpg" alt="Banana">
+    </a>
+    <a href="../static/1X5A9840.jpg" title="Apple">
+        <img src="../static/1X5A9840.jpg" alt="Apple">
+    </a>
+    <a href="../static/1X5A1123.jpg" title="Orange">
+        <img src="../static/1X5A1123.jpg" alt="Orange">
+    </a>
+    <div>
+</div>
+<script src="js/blueimp-gallery.min.js"></script>
+<script>
+blueimp.Gallery(
+    document.getElementById('links').getElementsByTagName('a'),
+    {
+        container: '#blueimp-gallery',
+        carousel: true
+    }
+);
+</script>
+<script>
+document.getElementById('links').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
+</script>
+</body>

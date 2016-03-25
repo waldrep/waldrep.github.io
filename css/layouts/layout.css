@@ -98,6 +98,28 @@ a:active{
     margin-top: 0em;
 }
 
+#essay-l{
+    text-align: left;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 3em;
+    padding-right: 3em;
+    max-width: 800px;
+    margin-top: 0em;
+}
+#essay-l p{
+    color: black;
+    font-family: "Merriweather", serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2rem;
+    margin-bottom: 1em;
+    margin-top:0;
+    padding-top: 1em;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
 #essay p{
     color: black;
     font-family: "Merriweather", serif;
@@ -191,7 +213,7 @@ a:active{
     background-position: center center;
     background-size: cover;
     padding: 0px;
-    background-image: url("../../static/1X5A8605.jpg");
+    background-image: url("../../static/f123865754.jpg");
     margin: 0px;
     z-index: 5;
 }
