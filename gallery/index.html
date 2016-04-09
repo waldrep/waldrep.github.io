@@ -10,8 +10,8 @@
 <link rel="stylesheet" href="css/demo.css">
 </head>
 <body>
-<h3>Hi what's going on</h3>
-<div id="blueimp-gallery" class="blueimp-gallery blueimg-gallery">
+<h1>Hi what's going on</h1>
+<div id="blueimp-gallery" class="blueimp-gallery">
     <div class="slides"></div>
     <h3 class="title"></h3>
     <a class="prev">‹</a>
@@ -21,28 +21,69 @@
     <ol class="indicator"></ol>
 </div>
 <div id="links">
-    <div class='mcw'>
-    <a href="../static/1X5A9931.jpg" title="Banana">
-        <img src="../static/1X5A9931.jpg" alt="Banana">
+    
+    <a href="../static/gallery/1.jpg" title="1">
+        <img src="../static/gallery/1.jpg" alt="1">
     </a>
-    <a href="../static/1X5A9840.jpg" title="Apple">
-        <img src="../static/1X5A9840.jpg" alt="Apple">
+    <div id="hide" style="display:none;">
+    <a href="../static/gallery/2.jpg" title="2">
+        <img src="../static/gallery/2.jpg" alt="2">
     </a>
-    <a href="../static/1X5A1123.jpg" title="Orange">
-        <img src="../static/1X5A1123.jpg" alt="Orange">
+    <a href="../static/gallery/3.jpg" title="3">
+        <img src="../static/gallery/3.jpg" alt="3">
     </a>
-    <div>
+        <a href="../static/gallery/4.jpg" title="3">
+        <img src="../static/gallery/4.jpg" alt="3">
+    </a>
+        <a href="../static/gallery/5.jpg" title="3">
+        <img src="../static/gallery/5.jpg" alt="3">
+    </a>
+        <a href="../static/gallery/6.jpg" title="3">
+        <img src="../static/gallery/6.jpg" alt="3">
+    </a>
+        <a href="../static/gallery/7.jpg" title="3">
+        <img src="../static/gallery/7.jpg" alt="3">
+    </a>
+        <a href="../static/gallery/8.jpg" title="3">
+        <img src="../static/gallery/8.jpg" alt="3">
+    </a>
+        <a href="../static/gallery/9.jpg" title="3">
+        <img src="../static/gallery/9.jpg" alt="3">
+    </a>
+        <a href="../static/gallery/10.jpg" title="3">
+        <img src="../static/gallery/10.jpg" alt="3">
+    </a>
+        <a href="../static/gallery/11.jpg" title="3">
+        <img src="../static/gallery/11.jpg" alt="3">
+    </a>
+        <a href="../static/gallery/12.jpg" title="3">
+        <img src="../static/gallery/12.jpg" alt="3">
+    </a>
+        <a href="../static/gallery/13.jpg" title="3">
+        <img src="../static/gallery/13.jpg" alt="3">
+    </a>
+        <a href="../static/gallery/14.jpg" title="3">
+        <img src="../static/gallery/14.jpg" alt="3">
+    </a>
+        <a href="../static/gallery/15.jpg" title="3">
+        <img src="../static/gallery/15.jpg" alt="3">
+    </a>
+        <a href="../static/gallery/16.jpg" title="3">
+        <img src="../static/gallery/16.jpg" alt="3">
+    </a>
+        <a href="../static/gallery/17.jpg" title="3">
+        <img src="../static/gallery/17.jpg" alt="3">
+    </a>
+        <a href="../static/gallery/18.jpg" title="3">
+        <img src="../static/gallery/18.jpg" alt="3">
+    </a>
+        <a href="../static/gallery/19.jpg" title="3">
+        <img src="../static/gallery/19.jpg" alt="3">
+    </a>
+    </div>
+
 </div>
 <script src="js/blueimp-gallery.min.js"></script>
-<script>
-blueimp.Gallery(
-    document.getElementById('links').getElementsByTagName('a'),
-    {
-        container: '#blueimp-gallery',
-        carousel: true
-    }
-);
-</script>
 <script>
 document.getElementById('links').onclick = function (event) {
     event = event || window.event;

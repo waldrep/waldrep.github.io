@@ -48,6 +48,7 @@ p {
 
 #single_img{
     margin: auto;
+    max-height:95vh;
 }
 
 #testing_es{
@@ -95,44 +96,30 @@ a:active{
     padding-left: 3em;
     padding-right: 3em;
     max-width: 800px;
-    margin-top: 0em;
-}
-
-#essay-l{
-    text-align: left;
-    position: relative;
-    margin: 0 auto;
-    padding-left: 3em;
-    padding-right: 3em;
-    max-width: 800px;
-    margin-top: 0em;
-}
-#essay-l p{
-    color: black;
+    margin-top: 0.53em;
+    padding-bottom: 1.5em;
     font-family: "Merriweather", serif;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 2rem;
-    margin-bottom: 1em;
-    margin-top:0;
-    padding-top: 1em;
-    margin-left: 5em;
-    margin-right: 5em;
+
 }
 
 #essay p{
     color: black;
-    font-family: "Merriweather", serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 2rem;
-    margin-bottom: 1em;
-    margin-top:0;
+    margin-bottom:0px;
     padding-top: 1em;
+    margin-top:0px;
     margin-left: 5em;
     margin-right: 5em;
+    text-align:left;
 }
+#essay h2{
+    margin-top: 1.5em;
+    margin-bottom:1em;
+    text-align: center;
 
+}
 .l-box h1{
     font-size: 50px;
     color: black;
@@ -363,6 +350,8 @@ a:active{
  */
 .pricing-table-header {
     color: black;
+    padding-top:1em;
+    padding-bottom:0.5em;
 }
     .pricing-table-header h2 {
         margin: 0;
