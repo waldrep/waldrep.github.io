@@ -541,7 +541,9 @@ a:active{
     }
 
 }
-
+#bottomimage{
+    margin-bottom: 5%;
+}
 /*
  * -- PHONE MEDIA QUERIES --
  * On phones, we want to reduce the height and font-size of the banner further
