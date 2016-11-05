@@ -56,7 +56,7 @@
     <div id = "banner_bg">
     <div class= "banner-head">
     <h1>La Ciudad Actual</h1>
-    <span id="js_button"><h2>By Michael Waldrep</h2></span>
+    <span id="js_button"><h2><span id="by">By</span> Michael Waldrep</h2></span>
     <h3>Mexico City, North America's largest urban area, continues to grow outwards. Its newest districts simultaneously reflect the city's uniqueness, and the face of developing &mdash; and suburbanizing &mdash; cities around the world.</h3>
     </div>
     <div class="caption">
@@ -72,7 +72,9 @@
             <span id="testing_es"><h1>¿Cómo parece la megalópolis de la Sigla XXI?</h1></span>
             <article id="intro_article">
             <span id="testing"><h1>The Contemporary City</h1></span>
-        
+        <span id="subhead">
+        <p> (An introduction)</p>
+        </span>
        <p>
        Mexico City is a space, constructed from buildings, lives, policies, and understandings. Its an agglomeration of ideals and visions, of interventions and negotiations. It extends across and beyond its various (and always inadequate) mapped representations: a dot on a globe, a governmental boundary, a polygon of ‘urban extent.’ In this extension, it is a prototypical 21st century city. Assembled within geomorphological constraints and legal frameworks, it represents the sum of 700 years of city planning.
        </p>
@@ -87,9 +89,10 @@
         <p>
         Mexico’s path to this contemporary start is unique and storied. But in many ways, too, it is typical of a global phenomenon. The oft-discussed tip from a majority-rural to urban population on earth is sometimes linked to discussions of millennials bidding up rents in San Francisco or New York. In actuality, though, its in places like Coacalco and Ixtapaluca that this transition is truly taking place, where these numbers are really adding up. And the neighborhoods, both formal and informal, that are lumping themselves onto the mass of Mexico City are in many ways the same as those in Cape Town, Istanbul, and Rio de Janeiro. 
         </p>
+        <div id="showmore">
         <script>
         $('article').readmore({
-            collapsedHeight:300,
+            collapsedHeight:330,
             speed: 500,
             moreLink: '<a href="#">more</a>',
             lessLink: '<a href="#">less</a>',
@@ -100,6 +103,7 @@
         }
     });
         </script>
+        </div>
         </article>
 
             </div>

@@ -1,4 +1,4 @@
-.menu_bar{
+    .menu_bar{
     position: fixed;
     margin: 0px;
     z-index: 98;
@@ -104,7 +104,7 @@ a:active{
 
 #essay p{
     color: black;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 2rem;
     margin-bottom:0px;
@@ -112,7 +112,7 @@ a:active{
     margin-top:0px;
     margin-left: 5em;
     margin-right: 5em;
-    text-align:left;
+    text-align:left; 
 }
 #essay h2{
     margin-top: 1.5em;
@@ -121,7 +121,7 @@ a:active{
 
 }
 .l-box h1{
-    font-size: 50px;
+    font-size: 35px;
     color: black;
     text-align: center;
     margin: 0px;
@@ -274,7 +274,7 @@ a:active{
 .banner-head h2{
     font-family: 'Merriweather', serif;
     font-size: 19px;
-    font-weight: 900;
+    font-weight: 700;
     margin-top: 1em;
     
 }
@@ -543,6 +543,20 @@ a:active{
 }
 #bottomimage{
     margin-bottom: 5%;
+}
+
+#subhead p{
+    margin-bottom: 0px;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+}
+#by{
+    font-weight: 300;
+}
+#showmore{
+    background-color: black;
+    padding-left: 200px;
 }
 /*
  * -- PHONE MEDIA QUERIES --
