@@ -551,6 +551,15 @@ a:active{
     font-style: italic;
     text-align: center;
 }
+
+#essay a{
+    text-align: left;
+    width: 50px;
+    margin-left: 4.4em;
+
+    
+}
+
 #by{
     font-weight: 300;
 }
